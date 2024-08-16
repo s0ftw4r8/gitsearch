@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitSearch</title>
+  <link href="bootstrap.css" rel="stylesheet">
+  <script src="jquery.js"></script>
+  <style>
+    body {
+      width: 300px;
+      height: 100px;
+      background-color: darkslategray;
+    }
+
+    input.form-control.me-2.text-center {
+      background-color: #6c757d;
+      color: azure !important;
+      border: none;
+    }
+
+    input[type="search"]:focus {
+      box-shadow: none;
+      outline: 0 none;
+      border: none;
+    }
+
+    input::placeholder {
+      color: azure !important;
+    }
+
+    select.form-select.form-select-sm {
+      background-color: #6c757d;
+    }
+
+    .btn {
+      color: azure;
+    }
+
+    h1 {
+      font-family: 'Rubik One', sans-serif;
+      font-size: 40px;
+      text-transform: uppercase;
+      background: repeating-linear-gradient(rgb(88, 88, 88), rgb(241, 241, 241) 2px, #55585a 2px, #838586 3px);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #183D58;
+      display: table;
+      margin: 20px auto;
+    }
+    svg{
+      width: 25px;
+      height: 25px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="text-center">GitSearch</h1>
+  <div class="container-fluid">
+    <div class="row mb-3 mt-3">
+      <input class="form-control me-2 text-center" type="search" id="object">
+    </div>
+    <div class="row mb-3">
+      <div class="col">
+        <input type="radio" class="btn-check" name="options" id="repo" checked>
+        <label class="btn btn-outline-secondary w-100" for="repo">Repo</label>
+      </div>
+      <div class="col">
+        <input type="radio" class="btn-check" name="options" id="users">
+        <label class="btn btn-outline-secondary w-100" for="users">User</label>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn btn-success" type="submit" id="search"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.9536 14.9458L21 21M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
